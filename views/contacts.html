@@ -1,0 +1,35 @@
+<div class="contacts-page page">
+  <div class="contacts-top">
+    <section>
+      <ul class="contacts-lists">
+        <li class="contacts-item">
+          <div class="contacts-pic"><img src="image/new-friends.png" alt=""></div>
+          <div class="contacts-name">新的朋友</div>
+        </li>
+        <li class="contacts-item">
+          <div class="contacts-pic"><img src="image/chat.png" alt=""></div>
+          <div class="contacts-name">群聊</div>
+        </li>
+        <li class="contacts-item">
+          <div class="contacts-pic"><img src="image/tag.png" alt=""></div>
+          <div class="contacts-name">标签</div>
+        </li>
+        <li class="contacts-item">
+          <div class="contacts-pic"><img src="image/public.png" alt=""></div>
+          <div class="contacts-name">公众号</div>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <div class="contacts-part" ng-repeat="v in lists">
+    <section>
+      <h5>{{v.key}}</h5>
+      <ul class="contacts-lists" ng-repeat="v in v.people">
+        <li class="contacts-item">
+          <div class="contacts-pic"><img src="{{v.img}}" alt=""></div>
+          <div class="contacts-name">{{v.name}}</div>
+        </li>
+      </ul>
+    </section>
+  </div>
+</div>

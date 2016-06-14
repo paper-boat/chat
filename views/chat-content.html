@@ -1,0 +1,46 @@
+
+  <header class="chat-header">
+    <div class="header-left">
+       <a href="#/chat/html">
+          <span class="iconfont icon-jiantou"></span>
+       </a>
+       <div class=""  ng-repeat="v in chatList">
+         <span class="user-name">{{v.name}}</span>
+       </div>
+
+    </div>
+    <div class="header-right">
+      <span class="iconfont icon-fangdajing"></span>
+    </div>
+  </header>
+
+
+    <div class="time-wrapper">
+      <!-- <div class="time">6月3日 下午 : </div> -->
+    </div>
+    <div class="chat-content">
+      <ul class="chat-lines">
+        <li class="chat-line" ng-repeat="v in List">
+          <div class="user-img" ng-class={me:v.isMe}>
+            <img ng-if="v.isMe" src="image/1.jpg" alt="">
+            <img ng-if="!v.isMe" src={{duifang}} alt="">
+          </div>
+          <div class="chat-text" ng-class={me:v.isMe}>
+            <span>{{v.info}}</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <footer class="chat-footer">
+    <div class="footer-wrap">
+      <ul class="chat-bottom">
+        <li class="chat-bottom-icon wifi"><span></span></li>
+        <li class="chat-bottom-icon smile"><span></span></li>
+        <li class="chat-bottom-icon add"><span></span></li>
+      </ul>
+    </div>
+    <div class="chat-input">
+      <input type="text">
+    </div>
+  </footer>

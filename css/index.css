@@ -1,0 +1,457 @@
+@charset "UTF-8";
+body, ul, li, h1, h2, h3, h4, h5, h6, a, span, div, p, strong {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: Arial,'Microsoft YaHei'; }
+
+.footer-lists:after, .chat-bottom:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 91.42857px; } }
+
+@media screen and (min-width: 350px) {
+  html {
+    font-size: 100px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 102.85714px; } }
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 109.71429px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 117.71429px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 118.28571px; } }
+
+@media screen and (min-width: 460px) {
+  html {
+    font-size: 131.42857px; } }
+
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 182.85714px; } }
+
+ul, li {
+  list-style: none;
+  display: block; }
+
+img {
+  width: 100%; }
+
+a:hover {
+  text-decoration: none; }
+
+.container {
+  height: 6rem;
+  background: #EBEBEB; }
+
+.container-inner, .block, .content, .page {
+  width: 100%;
+  height: 100%; }
+
+.container {
+  padding: 0;
+  margin: 0; }
+
+.container-inner {
+  width: 100%; }
+
+.header, .chat-header, .footer, .chat-footer {
+  width: 100%;
+  height: 0.5rem;
+  position: fixed;
+  left: 0;
+  z-index: 1; }
+
+.footer {
+  height: 0.55rem; }
+
+.header {
+  top: 0;
+  background: #393A3F;
+  color: #fff; }
+  .header .header-left, .header .header-right {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    text-align: center;
+    line-height: .5rem; }
+  .header .header-left {
+    width: .65rem;
+    left: 0;
+    font-size: .18rem;
+    letter-spacing: .01rem; }
+  .header .header-right {
+    width: 1.25rem;
+    right: 0; }
+    .header .header-right span {
+      font-size: .17rem;
+      margin-right: .25rem; }
+    .header .header-right .icon-jiahao {
+      margin-left: .25rem; }
+
+.xiala {
+  opacity: 1;
+  transition: opacity .4s ease;
+  position: absolute;
+  top: .5rem;
+  right: .1rem;
+  width: 1.96rem;
+  background: #393A3F;
+  z-index: 5; }
+  .xiala .xiala-item {
+    width: 100%;
+    height: .47rem;
+    border-bottom: 1px solid #343539;
+    padding: .1rem; }
+  .xiala .xiala-item a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff; }
+    .xiala .xiala-item a span:before {
+      margin-right: .2rem; }
+
+.xiala.ng-hide {
+  opacity: 0; }
+
+.footer {
+  bottom: 0;
+  background: #FCFCFC;
+  border-top: 1px solid #EBEBEB; }
+
+.footer.ng-hide {
+  opacity: 0; }
+
+.footer-wrap {
+  height: 100%;
+  padding: 0 .1rem; }
+
+.footer-lists .footer-item {
+  width: 25%;
+  height: 100%;
+  float: left;
+  text-align: center; }
+  .footer-lists .footer-item span {
+    display: block;
+    height: .3rem;
+    color: #B6B6B6;
+    margin-top: .02rem;
+    position: relative; }
+  .footer-lists .footer-item .iconfont {
+    font-size: .27rem; }
+  .footer-lists .footer-item .iconfont:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    line-height: .26rem; }
+
+.footer-lists .footer-item.active span {
+  color: #46C01B; }
+
+.blocks {
+  height: 5.15rem;
+  position: relative;
+  top: .50rem;
+  overflow: hidden; }
+
+.content {
+  position: relative; }
+
+.page {
+  width: 100%;
+  height: 5.15rem;
+  position: fixed;
+  top: .5rem;
+  bottom: 0;
+  overflow: auto; }
+
+.chat-page .chat-lists {
+  background: #fff; }
+  .chat-page .chat-lists .chat-item {
+    height: .64rem;
+    border-bottom: 1px solid #F0F0F0;
+    padding: .06rem .08rem;
+    position: relative;
+    overflow: hidden; }
+  .chat-page .chat-lists .chat-item .slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: #fff;
+    transform: none;
+    transition: transform .5s ease; }
+  .chat-page .chat-lists .chat-item .slide.show-delete {
+    transform: translateX(-0.8rem); }
+  .chat-page .chat-lists .chat-item .del-btn {
+    width: .8rem;
+    height: .6rem;
+    position: absolute;
+    top: .02rem;
+    right: 0;
+    background: #ff6534;
+    color: #fff;
+    line-height: .6rem;
+    text-align: center;
+    font-size: .16rem; }
+  .chat-page .chat-lists .chat-item .chat-link {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 12; }
+  .chat-page .chat-lists .chat-item .slide .pic, .chat-page .chat-lists .chat-item .slide .chat-info {
+    height: .48rem;
+    padding: .05rem .08rem;
+    float: left; }
+  .chat-page .chat-lists .chat-item .pic {
+    width: .48rem;
+    margin-top: .07rem; }
+  .chat-page .chat-lists .chat-info {
+    width: 2.8rem; }
+    .chat-page .chat-lists .chat-info span {
+      display: block; }
+    .chat-page .chat-lists .chat-info .chat-user {
+      font-size: .16rem;
+      line-height: .24rem; }
+    .chat-page .chat-lists .chat-info .chat-desc {
+      font-size: .135rem;
+      line-height: .2rem;
+      color: #D3D3D3; }
+
+.contacts-page h5 {
+  padding: 0 .16rem;
+  height: .25rem;
+  line-height: .25rem;
+  background: #EBEBEB; }
+
+.contacts-page .contacts-lists {
+  padding: 0 .16rem;
+  background: #fff; }
+  .contacts-page .contacts-lists .contacts-item {
+    width: 100%;
+    height: .49rem;
+    border-bottom: 1px solid #EDEDED;
+    position: relative; }
+    .contacts-page .contacts-lists .contacts-item .contacts-pic {
+      width: .37rem;
+      height: .37rem;
+      float: left;
+      margin: .06rem 0; }
+    .contacts-page .contacts-lists .contacts-item .contacts-name {
+      width: 2.81rem;
+      height: .49rem;
+      line-height: .49rem;
+      float: left;
+      font-size: .15rem;
+      padding-left: .15rem; }
+
+.find-page li, .my-page li {
+  width: 100%;
+  height: .49rem;
+  padding: 0 .16rem;
+  box-sizing: border-box;
+  background: #fff; }
+  .find-page li a, .my-page li a {
+    display: block;
+    width: 100%;
+    height: 100%; }
+    .find-page li a span, .my-page li a span {
+      display: block;
+      float: left; }
+    .find-page li a .find-pic, .my-page li a .find-pic {
+      width: .27rem;
+      height: .27rem;
+      margin: .11rem 0; }
+    .find-page li a .find-text, .my-page li a .find-text {
+      width: 2.9rem;
+      height: .49rem;
+      line-height: .49rem;
+      padding-left: .1rem;
+      font-size: .15rem;
+      color: #000; }
+
+.find-page .friend, .find-page .sao, .find-page .around, .find-page .shop {
+  margin-top: .2rem; }
+
+.find-page .sao a, .find-page .shop a {
+  border-bottom: 1px solid #ededed; }
+
+.my-info {
+  background: #fff;
+  width: 100%;
+  height: .8rem;
+  margin-top: .2rem;
+  padding: .06rem; }
+  .my-info .my-img, .my-info .my-info, .my-info .my-erweima {
+    float: left; }
+  .my-info .my-img, .my-info .my-erweima {
+    width: .65rem;
+    height: .65rem;
+    line-height: .65rem; }
+  .my-info .my-desc {
+    width: 1.7rem;
+    height: .65rem;
+    margin-left: .09rem;
+    float: left; }
+    .my-info .my-desc span {
+      height: .23rem;
+      display: block; }
+    .my-info .my-desc .my-name {
+      font-size: .15rem;
+      margin-top: .11rem; }
+
+.my-page {
+  overflow: hidden; }
+  .my-page .find-lists .find-item {
+    margin-top: 0.2rem; }
+  .my-page .find-lists .find-item.shoucang {
+    margin-top: 0;
+    border-top: 1px solid #ededed; }
+
+.chat-header {
+  background: #393A3F;
+  color: #fff; }
+  .chat-header .header-left {
+    width: 1.75rem;
+    padding: .1rem .15rem;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    float: left;
+    line-height: .3rem;
+    font-size: .17rem; }
+    .chat-header .header-left .icon-jiantou {
+      margin-right: .1rem;
+      line-height: .3rem;
+      margin-right: .15rem; }
+  .chat-header .header-right {
+    float: right;
+    width: .5rem;
+    height: .5rem;
+    padding: .15rem; }
+
+.time-wrapper {
+  height: .45rem;
+  padding: .13rem 1.22rem; }
+  .time-wrapper .time {
+    padding: .03rem;
+    background: #D4D4D4;
+    color: #fff;
+    letter-spacing: .02rem; }
+
+.chat-content .chat-lines {
+  padding: .1rem; }
+  .chat-content .chat-lines .chat-line {
+    max-width: 100%;
+    min-height: .4rem;
+    margin-bottom: .1rem; }
+    .chat-content .chat-lines .chat-line .user-img {
+      width: .4rem;
+      height: .4rem;
+      float: left; }
+    .chat-content .chat-lines .chat-line .user-img.me {
+      float: right; }
+    .chat-content .chat-lines .chat-line .chat-text.me {
+      float: right;
+      margin-right: .15rem; }
+    .chat-content .chat-lines .chat-line .chat-text.me:after {
+      display: inline-block;
+      content: '▲';
+      transform: rotate(90deg);
+      position: absolute;
+      right: -0.1rem;
+      top: .07rem;
+      color: #fff; }
+    .chat-content .chat-lines .chat-line .chat-text.me:before {
+      content: ''; }
+    .chat-content .chat-lines .chat-line .chat-text {
+      float: left;
+      max-width: 2.3rem;
+      min-height: .3rem;
+      padding: .08rem .15rem;
+      margin-left: .15rem;
+      background: #fff;
+      border-radius: .03rem;
+      position: relative; }
+    .chat-content .chat-lines .chat-line .chat-text:before {
+      display: inline-block;
+      content: '▲';
+      transform: rotate(-90deg);
+      position: absolute;
+      left: -0.1rem;
+      color: #fff; }
+
+.chat-bottom input {
+  border: none;
+  outline: none; }
+
+.chat-bottom li {
+  width: 100%;
+  display: inline-block; }
+
+.chat-bottom .chat-bottom-icon {
+  width: .3rem;
+  height: .5rem; }
+
+.chat-bottom .wifi {
+  float: left; }
+
+.chat-bottom .smile, .chat-bottom .add {
+  float: right; }
+
+.beizhu-wrapper {
+  width: 100%;
+  height: .45rem;
+  background: #fff;
+  padding: .15rem;
+  margin-top: .2rem; }
+
+.user-info-wrapper {
+  margin-top: .2rem; }
+  .user-info-wrapper .user-info .user-info-lists {
+    padding: .2rem .15rem 0 .15rem;
+    background: #fff; }
+    .user-info-wrapper .user-info .user-info-lists li {
+      height: .49rem;
+      border-bottom: 1px solid #ccc;
+      font-size: .18rem;
+      line-height: .49rem; }
+
+.btn-wrapper {
+  margin-top: .2rem; }
+  .btn-wrapper .btn button {
+    width: 3.25rem;
+    outline: none;
+    border: none;
+    height: .48rem;
+    display: block;
+    margin: 0 auto;
+    font-size: .16rem; }
+  .btn-wrapper .btn .news {
+    background: #1AAD19;
+    color: #fff; }
+  .btn-wrapper .btn .video-chat {
+    background: #fff;
+    margin-top: .2rem; }
+
+.chat-footer {
+  bottom: 0;
+  z-index: 100; }

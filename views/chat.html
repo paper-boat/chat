@@ -1,0 +1,15 @@
+<div class="chat-page page">
+  <ul class="chat-lists">
+    <li class="chat-item" ng-repeat="v in chatList">
+      <div class="slide" ng-swipe-left="flag=true" ng-swipe-right="flag=false" ng-init="flag" ng-class={'show-delete':flag}>
+        <a href="#/chat-content/{{$index}}" class="chat-link"></a>
+        <div class="pic"><img src={{v.img}} alt=""></div>
+        <div class="chat-info">
+           <span class="chat-user">{{v.name}}</span>
+           <span class="chat-desc">{{v.desc}}</span>
+        </div>
+      </div>
+      <div class="del-btn" ng-click="delete($index)">删除</div>
+    </li>
+  </ul>
+</div>
