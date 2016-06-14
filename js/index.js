@@ -3,7 +3,7 @@ var test = angular.module('weixin',['ngAnimate','ngRoute','ngTouch']);
 test.factory('$x',[function(){
   var chatList = [
     {
-      img:'../image/12.jpg',
+      img:'../images/12.jpg',
       name:'张三',
       desc:'你好！！',
       tip:'12.30',
@@ -15,7 +15,7 @@ test.factory('$x',[function(){
       ]
     },
     {
-      img:'image/02.jpg',
+      img:'images/02.jpg',
       name:'李四',
       desc:'你好啊',
       tip:'6.11',
@@ -27,7 +27,7 @@ test.factory('$x',[function(){
       ]
     },
     {
-      img:'image/03.jpg',
+      img:'images/03.jpg',
       name:'好大一个家',
       desc:'端午节',
       tip:'6.11',
@@ -39,7 +39,7 @@ test.factory('$x',[function(){
       ]
     },
     {
-      img:'image/4.jpg',
+      img:'images/4.jpg',
       name:'王五',
       desc:'我通过了你的好友验证',
       tip:'6.11',
@@ -79,19 +79,19 @@ test.factory('$y',[function(){
     {
       key:'A',
       people:[
-        {img:'../image/01.jpg',name:'啊史',weixinhao:'xxxxx'},
-        {img:'../image/2.jpg',name:'啊史',weixinhao:'xxxxx'},
-        {img:'../image/6.jpg',name:'啊史',weixinhao:'xxxxx'},
-        {img:'../image/04.jpg',name:'啊史',weixinhao:'xxxxx'},
+        {img:'../images/01.jpg',name:'啊史',weixinhao:'xxxxx'},
+        {img:'../images/2.jpg',name:'啊史',weixinhao:'xxxxx'},
+        {img:'../images/6.jpg',name:'啊史',weixinhao:'xxxxx'},
+        {img:'../images/04.jpg',name:'啊史',weixinhao:'xxxxx'},
       ]
     },
     {
       key:'B',
       people:[
-        {img:'../image/05.jpg',name:'笨笨',weixinhao:'xxxxx'},
-        {img:'../image/3.jpg',name:'不擦',weixinhao:'xxxxx'},
-        {img:'../image/06.jpg',name:'博鳌',weixinhao:'xxxxx'},
-        {img:'../image/8.jpg',name:'奔跑',weixinhao:'xxxxx'},
+        {img:'../images/05.jpg',name:'笨笨',weixinhao:'xxxxx'},
+        {img:'../images/3.jpg',name:'不擦',weixinhao:'xxxxx'},
+        {img:'../images/06.jpg',name:'博鳌',weixinhao:'xxxxx'},
+        {img:'../images/8.jpg',name:'奔跑',weixinhao:'xxxxx'},
       ]
     }
   ];
