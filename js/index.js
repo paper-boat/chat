@@ -27,6 +27,18 @@ test.factory('$x',[function(){
       ]
     },
     {
+      img:'images/a.jpg',
+      name:'nuonuo',
+      desc:'你好！！',
+      tip:'12.30',
+      liaotianjilu:[
+        {info:'你好啊？？',isMe:false},
+        {info:'你好',isMe:true},
+        {info:'我不好',isMe:false},
+        {info:'哦',isMe:true},
+      ]
+    },
+    {
       img:'images/a3.gif',
       name:'we are 伐木累',
       desc:'端午节',
@@ -36,6 +48,30 @@ test.factory('$x',[function(){
         {info:'看情况',isMe:false},
         {info:'哦',isMe:true},
         {info:'恩',isMe:false},
+      ]
+    },
+    {
+      img:'images/a1.jpg',
+      name:'紫荆花摇曳的伤',
+      desc:'你好啊',
+      tip:'6.11',
+      liaotianjilu:[
+        {info:'你好',isMe:false},
+        {info:'你好',isMe:true},
+        {info:'你好',isMe:false},
+        {info:'不好',isMe:true},
+      ]
+    },
+    {
+      img:'images/a1.jpg',
+      name:'紫荆花摇曳的伤',
+      desc:'你好啊',
+      tip:'6.11',
+      liaotianjilu:[
+        {info:'你好',isMe:false},
+        {info:'你好',isMe:true},
+        {info:'你好',isMe:false},
+        {info:'不好',isMe:true},
       ]
     },
     {
@@ -73,7 +109,19 @@ test.factory('$x',[function(){
         {info:'你哪里的',isMe:true},
         {info:'山西',isMe:false}
       ]
-    }
+    },
+    {
+      img:'images/a.jpg',
+      name:'nuonuo',
+      desc:'你好！！',
+      tip:'12.30',
+      liaotianjilu:[
+        {info:'你好啊？？',isMe:false},
+        {info:'你好',isMe:true},
+        {info:'我不好',isMe:false},
+        {info:'哦',isMe:true},
+      ]
+    },
   ]
   var x = {
     getAllChat:function(){
