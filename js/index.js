@@ -3,8 +3,8 @@ var test = angular.module('weixin',['ngAnimate','ngRoute','ngTouch']);
 test.factory('$x',[function(){
   var chatList = [
     {
-      img:'../images/12.jpg',
-      name:'张三',
+      img:'../images/a.jpg',
+      name:'nuonuo',
       desc:'你好！！',
       tip:'12.30',
       liaotianjilu:[
@@ -15,8 +15,8 @@ test.factory('$x',[function(){
       ]
     },
     {
-      img:'images/02.jpg',
-      name:'李四',
+      img:'images/a1.jpg',
+      name:'紫荆花摇曳的伤',
       desc:'你好啊',
       tip:'6.11',
       liaotianjilu:[
@@ -27,8 +27,8 @@ test.factory('$x',[function(){
       ]
     },
     {
-      img:'images/03.jpg',
-      name:'好大一个家',
+      img:'images/a3.gif',
+      name:'we are 伐木累',
       desc:'端午节',
       tip:'6.11',
       liaotianjilu:[
@@ -36,6 +36,30 @@ test.factory('$x',[function(){
         {info:'看情况',isMe:false},
         {info:'哦',isMe:true},
         {info:'恩',isMe:false},
+      ]
+    },
+    {
+      img:'images/a1.jpg',
+      name:'张三',
+      desc:'你好啊',
+      tip:'6.11',
+      liaotianjilu:[
+        {info:'你好',isMe:false},
+        {info:'你好',isMe:true},
+        {info:'你好',isMe:false},
+        {info:'不好',isMe:true},
+      ]
+    },
+    {
+      img:'images/logo.jpg',
+      name:'李四',
+      desc:'你好啊',
+      tip:'6.11',
+      liaotianjilu:[
+        {info:'你好',isMe:false},
+        {info:'你好',isMe:true},
+        {info:'你好',isMe:false},
+        {info:'不好',isMe:true},
       ]
     },
     {
@@ -79,10 +103,10 @@ test.factory('$y',[function(){
     {
       key:'A',
       people:[
-        {img:'../images/01.jpg',name:'啊史',weixinhao:'xxxxx'},
-        {img:'../images/2.jpg',name:'啊史',weixinhao:'xxxxx'},
-        {img:'../images/6.jpg',name:'啊史',weixinhao:'xxxxx'},
-        {img:'../images/04.jpg',name:'啊史',weixinhao:'xxxxx'},
+        {img:'../images/a.jpg',name:'huyuan',weixinhao:'xxxxx'},
+        {img:'../images/a1.jpg',name:'nuonuo',weixinhao:'xxxxx'},
+        {img:'../images/6.jpg',name:'顺丰',weixinhao:'xxxxx'},
+        {img:'../images/04.jpg',name:'滴滴',weixinhao:'xxxxx'},
       ]
     },
     {
